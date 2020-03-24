@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		E3927668242764A800AB2F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3927667242764A800AB2F62 /* AppDelegate.swift */; };
 		E392766A242764A800AB2F62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3927669242764A800AB2F62 /* SceneDelegate.swift */; };
-		E392766C242764A800AB2F62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E392766B242764A800AB2F62 /* ViewController.swift */; };
+		E392766C242764A800AB2F62 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E392766B242764A800AB2F62 /* CameraViewController.swift */; };
 		E392766F242764A800AB2F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E392766D242764A800AB2F62 /* Main.storyboard */; };
 		E3927671242764A900AB2F62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3927670242764A900AB2F62 /* Assets.xcassets */; };
 		E3927674242764A900AB2F62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3927672242764A900AB2F62 /* LaunchScreen.storyboard */; };
+		E392767C2427670D00AB2F62 /* StickyCornersBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E392767B2427670D00AB2F62 /* StickyCornersBehavior.swift */; };
+		E392768024287FED00AB2F62 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E392767F24287FED00AB2F62 /* PreviewView.swift */; };
+		E39276852428867400AB2F62 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39276842428867400AB2F62 /* OSLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3927664242764A800AB2F62 /* PiPCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiPCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3927667242764A800AB2F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3927669242764A800AB2F62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E392766B242764A800AB2F62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E392766B242764A800AB2F62 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		E392766E242764A800AB2F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3927670242764A900AB2F62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3927673242764A900AB2F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3927675242764A900AB2F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E392767B2427670D00AB2F62 /* StickyCornersBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCornersBehavior.swift; sourceTree = "<group>"; };
+		E392767F24287FED00AB2F62 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		E39276842428867400AB2F62 /* OSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		E3927666242764A800AB2F62 /* PiPCam */ = {
 			isa = PBXGroup;
 			children = (
-				E3927667242764A800AB2F62 /* AppDelegate.swift */,
-				E3927669242764A800AB2F62 /* SceneDelegate.swift */,
-				E392766B242764A800AB2F62 /* ViewController.swift */,
+				E3927681242880CC00AB2F62 /* Entry */,
+				E3927682242880DD00AB2F62 /* Views */,
+				E3927683242880E600AB2F62 /* Utilities */,
+				E392766B242764A800AB2F62 /* CameraViewController.swift */,
 				E392766D242764A800AB2F62 /* Main.storyboard */,
 				E3927670242764A900AB2F62 /* Assets.xcassets */,
 				E3927672242764A900AB2F62 /* LaunchScreen.storyboard */,
 				E3927675242764A900AB2F62 /* Info.plist */,
 			);
 			path = PiPCam;
+			sourceTree = "<group>";
+		};
+		E3927681242880CC00AB2F62 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				E3927667242764A800AB2F62 /* AppDelegate.swift */,
+				E3927669242764A800AB2F62 /* SceneDelegate.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		E3927682242880DD00AB2F62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E392767F24287FED00AB2F62 /* PreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3927683242880E600AB2F62 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E39276842428867400AB2F62 /* OSLog.swift */,
+				E392767B2427670D00AB2F62 /* StickyCornersBehavior.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E392766C242764A800AB2F62 /* ViewController.swift in Sources */,
+				E392768024287FED00AB2F62 /* PreviewView.swift in Sources */,
+				E392766C242764A800AB2F62 /* CameraViewController.swift in Sources */,
+				E39276852428867400AB2F62 /* OSLog.swift in Sources */,
+				E392767C2427670D00AB2F62 /* StickyCornersBehavior.swift in Sources */,
 				E3927668242764A800AB2F62 /* AppDelegate.swift in Sources */,
 				E392766A242764A800AB2F62 /* SceneDelegate.swift in Sources */,
 			);
